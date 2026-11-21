@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanyam Soni — Developer & Tech Enthusiast. My personal portfolio, projects and ways to get in touch.">
+    <meta name="theme-color" content="#0a0a12">
+    <title>Sanyam Soni — Portfolio</title>
+
+    <!-- Progressive enhancement: only hide reveal elements when JS is available. -->
+    <script>document.documentElement.classList.add("js");</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== Navigation ===== -->
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#home" class="nav-logo" aria-label="Portfolio home">
+                <span class="logo-mark" id="logoMark">S</span>
+                <span class="logo-text"><span id="logoText">SANYAM</span><span class="logo-dot">.</span></span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== Hero ===== -->
+        <section class="hero" id="home">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <div class="hero-content reveal">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> <span id="homeLabel">Hello, I'm</span></p>
+                    <h1 class="hero-title"><span id="heroFirst">Sanyam</span> <span class="gradient-text" id="heroLast">Soni</span></h1>
+                    <h2 class="hero-subtitle" id="heroRole">Developer &amp; Tech Enthusiast</h2>
+                    <p class="hero-desc" id="heroDescription">I build things for the web and enjoy turning ideas into clean, working experiences. Welcome to my corner of the internet.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+                    </div>
+                    <div class="hero-socials" id="heroSocials">
+                        <a href="https://github.com/Sanyam095" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="icon-gh" aria-hidden="true"></i><span>GitHub</span></a>
+                        <a href="https://www.linkedin.com/in/sanyam-soni-446b66358" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="icon-in" aria-hidden="true"></i><span>LinkedIn</span></a>
+                        <a href="https://www.instagram.com/sanyam_dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="icon-ig" aria-hidden="true"></i><span>Instagram</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="visual-ring ring-1"></div>
+                    <div class="visual-ring ring-2"></div>
+                    <div class="visual-avatar">
+                        <span class="avatar-letter" id="avatarLetter">S</span>
+                        <span class="avatar-badge">&lt;/&gt;</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+                <span class="mouse"><span class="wheel"></span></span>
+                <span class="scroll-text">Scroll</span>
+            </a>
+        </section>
+
+        <!-- ===== About ===== -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">01 / About</span>
+                    <h2>A little about me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <div id="aboutParagraphs">
+                            <p>I'm Sanyam, a developer who likes learning by building. I'm curious about how things work, careful about the details, and always looking for the next problem worth solving.</p>
+                            <p>When I'm not coding, you'll find me exploring new tools, experimenting with design, or tweaking my setup one more time.</p>
+                        </div>
+                        <div class="about-facts" id="aboutFacts">
+                            <div class="fact"><span class="fact-value">English</span><span class="fact-label">Language</span></div>
+                            <div class="fact"><span class="fact-value">Web</span><span class="fact-label">Focus</span></div>
+                            <div class="fact"><span class="fact-value">Always</span><span class="fact-label">Learning</span></div>
+                        </div>
+                    </div>
+                    <div class="about-card reveal">
+                        <div class="about-card-top"><span class="status-dot"></span> <span id="availabilityText">Available for work</span></div>
+                        <p class="about-card-quote" id="aboutQuote">“Good work comes from caring about the small things.”</p>
+                        <div class="about-card-lines"><span></span><span></span><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Skills ===== -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">02 / Skills</span>
+                    <h2>What I work with</h2>
+                </div>
+                <div class="skills-grid" id="skillsGrid">
+                    <div class="skill-card reveal"><span class="skill-icon">{ }</span><h3>HTML &amp; CSS</h3><p>Semantic, responsive, accessible layouts.</p></div>
+                    <div class="skill-card reveal"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Interactive, modern front-end behaviour.</p></div>
+                    <div class="skill-card reveal"><span class="skill-icon">&lt;/&gt;</span><h3>Web Development</h3><p>Building complete sites from idea to launch.</p></div>
+                    <div class="skill-card reveal"><span class="skill-icon">&#9672;</span><h3>Git &amp; GitHub</h3><p>Version control and collaboration.</p></div>
+                    <div class="skill-card reveal"><span class="skill-icon">&#9881;</span><h3>Problem Solving</h3><p>Breaking down problems into clean solutions.</p></div>
+                    <div class="skill-card reveal"><span class="skill-icon">&#10022;</span><h3>Design Sense</h3><p>Clean, modern and thoughtful interfaces.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Projects ===== -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">03 / Projects</span>
+                    <h2>Things I've built</h2>
+                    <p class="section-intro">A few projects are on the way — I'll add them here soon.</p>
+                </div>
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card placeholder reveal"><div class="project-thumb"><span>01</span></div><div class="project-body"><span class="project-badge">Coming Soon</span><h3>Project One</h3><p>Details about this project will appear here.</p></div></article>
+                    <article class="project-card placeholder reveal"><div class="project-thumb"><span>02</span></div><div class="project-body"><span class="project-badge">Coming Soon</span><h3>Project Two</h3><p>Details about this project will appear here.</p></div></article>
+                    <article class="project-card placeholder reveal"><div class="project-thumb"><span>03</span></div><div class="project-body"><span class="project-badge">Coming Soon</span><h3>Project Three</h3><p>Details about this project will appear here.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">04 / Contact</span>
+                    <h2>Let's connect</h2>
+                    <p class="section-intro">Have a question or want to work together? Reach out anytime.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details reveal" id="contactDetails">
+                        <a class="contact-item" href="mailto:sanyamsoni4455@gmail.com"><span class="contact-icon">&#9993;</span><span class="contact-meta"><span class="contact-label">Email</span><span class="contact-value">sanyamsoni4455@gmail.com</span></span></a>
+                        <a class="contact-item" href="tel:9053442243"><span class="contact-icon">&#9742;</span><span class="contact-meta"><span class="contact-label">Phone</span><span class="contact-value">9053442243</span></span></a>
+                        <a class="contact-item" href="https://github.com/Sanyam095" target="_blank" rel="noopener noreferrer"><span class="contact-icon">&#9679;</span><span class="contact-meta"><span class="contact-label">GitHub</span><span class="contact-value">github.com/Sanyam095</span></span></a>
+                        <a class="contact-item" href="https://www.linkedin.com/in/sanyam-soni-446b66358" target="_blank" rel="noopener noreferrer"><span class="contact-icon">in</span><span class="contact-meta"><span class="contact-label">LinkedIn</span><span class="contact-value">sanyam-soni-446b66358</span></span></a>
+                        <a class="contact-item" href="https://www.instagram.com/sanyam_dev/" target="_blank" rel="noopener noreferrer"><span class="contact-icon">&#9678;</span><span class="contact-meta"><span class="contact-label">Instagram</span><span class="contact-value">@sanyam_dev</span></span></a>
+                        <div class="contact-item is-muted"><span class="contact-icon">&#215;</span><span class="contact-meta"><span class="contact-label">Twitter / X</span><span class="contact-value">Coming soon</span></span></div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your name</label>
+                                <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your email</label>
+                                <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message <span aria-hidden="true">&rarr;</span></button>
+                        <p class="form-note" id="formNote" role="status">This opens your email app with the message ready to send.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#top" class="footer-logo"><span class="logo-mark" id="footerMark">S</span> <span id="footerBrand">SANYAM</span><span class="logo-dot">.</span></a>
+            <p class="footer-copy">&copy; <span id="year">2026</span> <span id="footerName">Sanyam Soni</span>. <span id="footerNote">All rights reserved.</span></p>
+            <a href="#top" class="back-to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

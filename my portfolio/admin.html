@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a12">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Portfolio Admin — Sanyam Soni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+    <header class="admin-header">
+        <div class="admin-header-inner">
+            <div class="admin-brand">
+                <span class="logo-mark">A</span>
+                <div>
+                    <strong>Portfolio Admin</strong>
+                    <small>Edit your site without touching code</small>
+                </div>
+            </div>
+            <div class="admin-actions">
+                <button class="btn btn-ghost btn-sm" id="btnView">View Site &#8599;</button>
+                <button class="btn btn-ghost btn-sm" id="btnImport">Import</button>
+                <button class="btn btn-ghost btn-sm" id="btnExport">Export data.js</button>
+                <button class="btn btn-primary btn-sm" id="btnSave">Save Changes</button>
+                <button class="btn btn-danger btn-sm" id="btnReset">Reset</button>
+                <input type="file" id="fileInput" accept=".js,.json,text/javascript,application/json" hidden>
+            </div>
+        </div>
+    </header>
+
+    <div class="admin-layout">
+        <aside class="admin-sidebar" aria-label="Admin sections">
+            <button class="side-link active" data-panel="profile"><span>01</span> Profile</button>
+            <button class="side-link" data-panel="about"><span>02</span> About</button>
+            <button class="side-link" data-panel="skills"><span>03</span> Skills</button>
+            <button class="side-link" data-panel="projects"><span>04</span> Projects</button>
+            <button class="side-link" data-panel="contact"><span>05</span> Contact</button>
+            <button class="side-link" data-panel="theme"><span>06</span> Theme</button>
+            <div class="sidebar-foot">
+                <p>Changes are saved in this browser instantly. Use <strong>Export data.js</strong> to publish them to your live site.</p>
+            </div>
+        </aside>
+
+        <main class="admin-main" id="adminMain"><!-- panels built by admin.js --></main>
+    </div>
+
+    <div class="admin-toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="data.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
